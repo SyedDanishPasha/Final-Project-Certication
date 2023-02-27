@@ -73,19 +73,8 @@ var players = [
 
 
 var playerDetails = document.getElementById("playerCardDiv");
-var heading = document.getElementById('heading');
-var head_title = document.createElement('h1');
-head_title.innerHTML = "Details"
+var heading = document.getElementById("heading");
+var head_title = document.createElement("h1");
+head_title.innerHTML = "Players List" 
+heading.append("head_title");
 
-for (var i = 0; i < players.length; i++){
-    if(players[i].isPlaying === false){
-        var playerCard = document.createElement("div");
-        playerCard. = "card";
-
-        var divImg = document.createElement('div');
-        divImg.className = "img";
-        var playImg = document.createElement('img');
-        playImg.src = players[i].imgPlayer;
-        divImg.append(playImg);
-    }
-}
